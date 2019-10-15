@@ -1,0 +1,157 @@
+<html>
+<head>
+<title>TestNG:  Default test</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Default test</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>6/0/0</td>
+</tr><tr>
+<td>Started on:</td><td>Mon Oct 14 11:07:01 CST 2019</td>
+</tr>
+<tr><td>Total time:</td><td>5 seconds (5736 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.xiaoxinkeji.interf.test.signboardTest.f()'><b>f</b><br>Test class: com.xiaoxinkeji.interf.test.signboardTest<br>Parameters: 1, YES, 输入正确的账号及密码登录, POST, http://www.nuandao.com, /public/lazyentrance, isajax=1&remember=1&email=asfasfasfasdf@qq.com&password=3333333&agreeterms=1&itype=&book=1&m=0.12248663395993764, $.status=1;$.data.id=1050187, , null<br/>
+<a href="#Output-2088445230" onClick='toggleBox("Output-2088445230", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-2088445230" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-2088445230">
+接口地址：http://www.nuandao.com/public/lazyentrance<br/>
+请求参数：isajax=1&remember=1&email=asfasfasfasdf@qq.com&password=3333333&agreeterms=1&itype=&book=1&m=0.12248663395993764<br/>
+</div>
+</td>
+<td></td>
+<td>3</td>
+<td>com.xiaoxinkeji.interf.test.signboardTest@77f03bb1</td></tr>
+<tr>
+<td title='com.xiaoxinkeji.interf.test.signboardTest.f()'><b>f</b><br>Test class: com.xiaoxinkeji.interf.test.signboardTest<br>Parameters: 2, YES, 输入正确的账号及错误密码登录, POST, http://www.nuandao.com, /public/lazyentrance, isajax=1&remember=1&email=asfasfasfasdf@qq.com&password=0000000&agreeterms=1&itype=&book=1&m=0.12248663395993764, $.status=2, , null<br/>
+<a href="#Output-2107443224" onClick='toggleBox("Output-2107443224", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-2107443224" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-2107443224">
+接口地址：http://www.nuandao.com/public/lazyentrance<br/>
+请求参数：isajax=1&remember=1&email=asfasfasfasdf@qq.com&password=0000000&agreeterms=1&itype=&book=1&m=0.12248663395993764<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>com.xiaoxinkeji.interf.test.signboardTest@77f03bb1</td></tr>
+<tr>
+<td title='com.xiaoxinkeji.interf.test.signboardTest.f()'><b>f</b><br>Test class: com.xiaoxinkeji.interf.test.signboardTest<br>Parameters: 3, YES, 输入正确的账号及正确的密码,但不传remember参数, POST, http://www.nuandao.com, /public/lazyentrance, isajax=1&email=asfasfasfasdf@qq.com&password=3333333&agreeterms=1&itype=&book=1&m=0.12248663395993764, $.status=1;$.data.id=1050187, , null<br/>
+<a href="#Output-1082309267" onClick='toggleBox("Output-1082309267", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1082309267" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1082309267">
+接口地址：http://www.nuandao.com/public/lazyentrance<br/>
+请求参数：isajax=1&email=asfasfasfasdf@qq.com&password=3333333&agreeterms=1&itype=&book=1&m=0.12248663395993764<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>com.xiaoxinkeji.interf.test.signboardTest@77f03bb1</td></tr>
+<tr>
+<td title='com.xiaoxinkeji.interf.test.signboardTest.f()'><b>f</b><br>Test class: com.xiaoxinkeji.interf.test.signboardTest<br>Parameters: 4, YES, 输入正确的账号及正确的密码,但不传remember,isajax参数, POST, http://www.nuandao.com, /public/lazyentrance, email=asfasfasfasdf@qq.com&password=3333333&agreeterms=1&itype=&book=1&m=0.12248663395993764, , , null<br/>
+<a href="#Output-272678513" onClick='toggleBox("Output-272678513", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-272678513" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-272678513">
+接口地址：http://www.nuandao.com/public/lazyentrance<br/>
+请求参数：email=asfasfasfasdf@qq.com&password=3333333&agreeterms=1&itype=&book=1&m=0.12248663395993764<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>com.xiaoxinkeji.interf.test.signboardTest@77f03bb1</td></tr>
+<tr>
+<td title='com.xiaoxinkeji.interf.test.signboardTest.f()'><b>f</b><br>Test class: com.xiaoxinkeji.interf.test.signboardTest<br>Parameters: 5, YES, 输入正确的账号及正确的密码,将remember=@进行传参, POST, http://www.nuandao.com, /public/lazyentrance, isajax=1&remember=@&email=asfasfasfasdf@qq.com&password=3333333&agreeterms=1&itype=&book=1&m=0.12248663395993764, $.status=1;$.data.id=1050187, , null<br/>
+<a href="#Output-1721246982" onClick='toggleBox("Output-1721246982", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1721246982" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1721246982">
+接口地址：http://www.nuandao.com/public/lazyentrance<br/>
+请求参数：isajax=1&remember=@&email=asfasfasfasdf@qq.com&password=3333333&agreeterms=1&itype=&book=1&m=0.12248663395993764<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>com.xiaoxinkeji.interf.test.signboardTest@77f03bb1</td></tr>
+<tr>
+<td title='com.xiaoxinkeji.interf.test.signboardTest.f()'><b>f</b><br>Test class: com.xiaoxinkeji.interf.test.signboardTest<br>Parameters: 6, YES, 获取购物车信息, POST, http://www.nuandao.com, /shopping/cart, countdown=1&m=0.369, , , <br/>
+<a href="#Output-1107412069" onClick='toggleBox("Output-1107412069", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1107412069" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1107412069">
+接口地址：http://www.nuandao.com/shopping/cart<br/>
+请求参数：countdown=1&m=0.369<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>com.xiaoxinkeji.interf.test.signboardTest@77f03bb1</td></tr>
+</table><p>
+</body>
+</html>
